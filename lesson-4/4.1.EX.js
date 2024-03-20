@@ -34,7 +34,7 @@ const app = http.createServer((req, res) => {
 
   // 콜백 함수의 response 매개변수를 사용해 처음 요청을 받은 사용자에게 다시 내용을보낸다.
   // 첫 번째 줄에서는 writeHead 메소드를 사용해 응답의 HTTP 헤더의 기본 속성을 정의한다.
-  res.writeHead(httpStatus.Ok, {
+  res.writeHead(httpStatus.OK, {
     "Content-Type" : "text/html"
   });
     // 이 경우 시스템은 httpStatus.OK를 돌려준다. 이는 응답 코드 200으로 표현되다.
